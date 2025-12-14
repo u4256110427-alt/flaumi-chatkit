@@ -15,7 +15,6 @@
             background: white;
             font-family: sans-serif;
         }
-
         #chatkit-root {
             width: 100%;
             height: 100vh;
@@ -24,30 +23,25 @@
 </head>
 
 <body>
-
-    <!-- Hier erscheint der Chat -->
     <div id="chatkit-root"></div>
 
     <script>
-        const chat = new ChatKit({
+        ChatKit.init({
             api: {
                 workflowId: "wf_69283629d5348190b8de41facf81a2ea30795fd4badf731ad",
                 version: "41",
                 domainKey: "domain_pk_692c20de369481939ab89488cb0ed18308ab238011927bde"
             },
-
             theme: {
                 colorScheme: "light",
                 radius: "pill",
                 density: "normal"
             }
-        });
-
-        chat.mount("#chatkit-root");
+        }).mount("#chatkit-root");
     </script>
-
 </body>
 </html>
+
 
 
 
