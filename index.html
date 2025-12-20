@@ -1,46 +1,38 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flaumi ChatKit</title>
+    <title>Flaumi Chat</title>
 
-    <!-- ChatKit Script -->
     <script src="https://cdn.jsdelivr.net/npm/@openai/chatkit@latest"></script>
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: white;
-            font-family: sans-serif;
-        }
-        #chatkit-root {
-            width: 100%;
-            height: 100vh;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #chatkit-root {
+        width: 100%;
+        height: 100vh;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="chatkit-root"></div>
 
     <script>
-        ChatKit.init({
-            api: {
-                workflowId: "wf_69283629d5348190b8de41facf81a2ea30795fd4badf731ad",
-                version: "41",
-                domainKey: "domain_pk_692c20de369481939ab89488cb0ed18308ab238011927bde"
-            },
-            theme: {
-                colorScheme: "light",
-                radius: "pill",
-                density: "normal"
-            }
-        }).mount("#chatkit-root");
+      ChatKit.init({
+        api: {
+          workflowId: "wf_69283629d5348190b8de1facf81a2ea30795fd4badf731ad",
+          domainKey: "domain_pk_6946bb601e4081938647fcecdca819f10a357751f5bf2ba3"
+        }
+      }).mount("#chatkit-root");
     </script>
-</body>
+  </body>
 </html>
+
 
 
 
